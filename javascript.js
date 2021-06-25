@@ -94,7 +94,7 @@ function RetrieveDataFromFireBase() {
       var Team1 = $("#Team1").val();
       var Team2 = $("#Team2").val();
       if (Team1 == Team2) {
-        $("#Team2_error_id").html("Passwords doesn't match");
+        $("#Team2_error_id").html("A Team cannot play with itself/Choose another Team");
         $("#Team2_error_id").show();
         $("#Team2").css("border", "2px solid #F90A0A");
         Team2_error_id = true;
